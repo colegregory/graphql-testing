@@ -1,0 +1,15 @@
+https://developer.github.com/v4/explorer/
+
+query repoLicenses {
+  viewer {
+    login
+    repositories(first: 10, orderBy: {field: PUSHED_AT, direction: ASC}) {
+      nodes {
+        name
+        licenseInfo {
+          name
+        }
+      }
+    }
+  }
+}

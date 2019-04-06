@@ -1,0 +1,12 @@
+https://graphql.github.io/swapi-graphql/
+
+query charactersPerFilm {
+  allFilms {
+    films {
+      title
+      characterConnection {
+       totalCount 
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+https://developer.github.com/v4/explorer/
+
+mutation newComment($input: AddCommentInput!) {
+  addComment(input: $input) {
+    clientMutationId
+    subject {
+      id
+    }
+  }
+}
+
+{
+  "input":{
+    "clientMutationId": "12345",
+    "subjectId": "MDU6SXNzdWU0MzAwNDM4NDk",
+    "body":"This comment was created with mutations"
+  }
+}

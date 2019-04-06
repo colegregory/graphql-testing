@@ -1,0 +1,17 @@
+https://graphql.github.io/swapi-graphql/
+
+query residentsOfPlanetsInFirstMovie {
+  film(filmID: 1) {
+    title
+    planetConnection {
+      planets {
+        name
+        residentConnection {
+          residents {
+            name
+          }
+        }
+      }
+    }
+  }
+}
